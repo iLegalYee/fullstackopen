@@ -1,0 +1,2 @@
+E:\FSU\VS\fullstackopen\part1\unicafe\obj\Debug\unicafe.esproj.SuggestedBindingRedirects.cache
+E:\FSU\VS\fullstackopen\part1\unicafe\obj\Debug\unicafe.esproj.CoreCompileInputs.cache

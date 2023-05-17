@@ -1,0 +1,2 @@
+E:\FSU\VS\fullstackopen\part2\countries\obj\Debug\countries.esproj.SuggestedBindingRedirects.cache
+E:\FSU\VS\fullstackopen\part2\countries\obj\Debug\countries.esproj.CoreCompileInputs.cache

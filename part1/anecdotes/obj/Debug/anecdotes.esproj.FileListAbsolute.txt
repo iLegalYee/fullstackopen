@@ -1,0 +1,2 @@
+E:\FSU\VS\fullstackopen\part1\anecdotes\obj\Debug\anecdotes.esproj.SuggestedBindingRedirects.cache
+E:\FSU\VS\fullstackopen\part1\anecdotes\obj\Debug\anecdotes.esproj.CoreCompileInputs.cache

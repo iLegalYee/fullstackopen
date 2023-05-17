@@ -1,0 +1,2 @@
+E:\FSU\VS\fullstackopen\part2\courseinfo\obj\Debug\courseinfo.esproj.SuggestedBindingRedirects.cache
+E:\FSU\VS\fullstackopen\part2\courseinfo\obj\Debug\courseinfo.esproj.CoreCompileInputs.cache

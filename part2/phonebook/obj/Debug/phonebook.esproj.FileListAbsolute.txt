@@ -1,0 +1,2 @@
+E:\FSU\VS\fullstackopen\part2\phonebook\obj\Debug\phonebook.esproj.SuggestedBindingRedirects.cache
+E:\FSU\VS\fullstackopen\part2\phonebook\obj\Debug\phonebook.esproj.CoreCompileInputs.cache
