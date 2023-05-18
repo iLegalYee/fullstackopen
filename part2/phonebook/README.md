@@ -1,3 +1,4 @@
+# For part2 you may need to change back the baseUrl to 'http://localhost:3001/persons' in api.js. Part3 required me to change it to '/api/persons'
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
