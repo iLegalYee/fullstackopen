@@ -3,9 +3,24 @@ const morgan = require('morgan');
 const app = express();
 const cors = require('cors')
 
+const requestLogger = (request, response, next) => {
+    console.log('Method:', request.method)
+    console.log('Path:  ', request.path)
+    console.log('Body:  ', request.body)
+    console.log('---')
+    next()
+}
+
+const unknownEndpoint = (request, response) => {
+    response.status(404).send({ error: 'unknown endpoint' })
+}
+
 app.use(express.json())
 app.use(morgan('tiny'))
 app.use(cors())
+app.use(requestLogger)
+app.use(express.static('build'))
+
 
 function generateId() {
     const maxId = phonebookEntries.length > 0 ? Math.max(...phonebookEntries.map((entry) => entry.id)) : 0;
@@ -85,6 +100,8 @@ app.delete('/api/persons/:id', (request, response) => {
     phonebookEntries = phonebookEntries.filter(person => person.id !== id)
     response.status(204).end()
 })
+
+app.use(unknownEndpoint)
 
 const PORT = process.env.PORT || 3001
 
