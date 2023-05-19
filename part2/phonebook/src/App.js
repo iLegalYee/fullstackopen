@@ -62,7 +62,13 @@ const App = () => {
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault();
+        event.preventDefault()
+
+        if (newName.length < 3) {
+            setError('Name must be at least three characters long');
+            return;
+        }
+
         const existingPerson = persons.find((person => person.name === newName))
         if (existingPerson) {
             const confirmUpdate = window.confirm(`${existingPerson.name} is already added to the phonebook. Replace the old number with a new one?`)
