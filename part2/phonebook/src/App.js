@@ -65,8 +65,11 @@ const App = () => {
         event.preventDefault()
 
         if (newName.length < 3) {
-            setError('Name must be at least three characters long');
-            return;
+            setError('Name must be at least three characters long')
+            setTimeout(() => {
+                setNotification(null);
+            }, 5000)
+            return
         }
 
         const existingPerson = persons.find((person => person.name === newName))
