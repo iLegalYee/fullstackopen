@@ -67,7 +67,7 @@ const App = () => {
         if (newName.length < 3) {
             setError('Name must be at least three characters long')
             setTimeout(() => {
-                setNotification(null);
+                setError(null);
             }, 5000)
             return
         }
@@ -94,7 +94,7 @@ const App = () => {
                     .catch((error) => {
                         setError('Failed to update the number. It has been already deleted');
                         setTimeout(() => {
-                            setNotification(null);
+                            setError(null);
                         }, 5000);
                     })
             } 
@@ -113,7 +113,7 @@ const App = () => {
                 .catch((error) => {
                     setError('Failed to add the person. Please try again.');
                     setTimeout(() => {
-                        setNotification(null);
+                        setError(null);
                     }, 5000);
                 });
         }
@@ -135,7 +135,7 @@ const App = () => {
                 .catch((error) => {
                     setError('Failed to delete the number. It has been already deleted.');
                     setTimeout(() => {
-                        setNotification(null);
+                        setError(null);
                     }, 5000);
                 });
         }
