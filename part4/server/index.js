@@ -3,15 +3,12 @@ const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
 
-const {getBlogs, createBlog } = require('./controllers/blogs')
+const { getBlogs, createBlog } = require('./controllers/blogs')
+const { info, error } = require('./utils/logger')
+const {mongoUrl } = require('./utils/config')
 
 
 
-const password = process.argv[2]
-
-console.log('password', password)
-
-const mongoUrl = `mongodb+srv://fullstackopen:${password}@cluster0.nxazoik.mongodb.net/?retryWrites=true&w=majority`
 mongoose.set('strictQuery', false)
 mongoose.connect(mongoUrl)
 
