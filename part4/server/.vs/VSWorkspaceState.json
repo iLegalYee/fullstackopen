@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\models",
+    "\\test",
+    "\\utils"
+  ],
+  "SelectedNode": "\\test\\users_api.test.js",
+  "PreviewInSolutionExplorer": false
+}
