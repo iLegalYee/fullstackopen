@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cypress",
+    "\\cypress\\e2e",
+    "\\src",
+    "\\src\\components",
+    "\\src\\services"
+  ],
+  "SelectedNode": "\\cypress\\e2e\\blog_app.cy.js",
+  "PreviewInSolutionExplorer": false
+}
